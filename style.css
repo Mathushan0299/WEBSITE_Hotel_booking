@@ -1,0 +1,425 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgb(254, 254, 254)) ;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.align{
+    position:absolute;
+    top: 15;
+    left: 20%;
+}
+.menu{
+    position:absolute;
+    top: 15;
+    left: 95%;
+}
+nav{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin: 0px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li{
+
+    align-items: center;
+    list-style-type: style none;
+    display: inline-block;
+    margin-right : 60px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(7, 8, 43);
+    font-size: 20px;
+
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+} 
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.booknow{
+    padding:15px 40px;
+    background:rgb(7, 8, 43);
+    font-weight: bold;
+    color: #fff;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    color: rgb(7, 8, 43);
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px rgb(7, 8, 43);
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(7, 8, 43);
+    font-size: 24px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.back-video{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0,0,.1);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+   padding:.5rem 0;
+}
+
+.home .video-container video{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+
+}
+
+.home .controls .vid-btn{
+    height:2rem;
+    width: 2rem;
+    display:inline-block;
+    border-radius: 50%;
+    background:#fff;
+    cursor:pointer;
+    margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active{
+    background:var(--orange);
+} 
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img.jpg");
+
+  /* Control the height of the image */
+  min-height: 550px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px 500px;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+align-items: center;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+align-items: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=email] {
+  width:20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+align-items: center;
+}
+
+input[type=text]:focus, input[type=em,ail]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+align-items: center;
+color:#04AA6D;
+
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.services .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services .box-container .box i{
+    padding:1rem;
+    font-size: 5rem;
+    color: var(--orange);
+}
+
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding:1rem 0;
+}
+
+.services .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .img{
+    flex: 1 1 35rem;
+}
+
+.contact .row .img img{
+    width: 100%;
+    height:500px;
+}
+
+.contact .row form{
+    flex: 1 1 35rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+}
+
+.contact .row form textarea{
+    height:27rem;
+    resize:none;
+    width:50%;
+}
+
+.book .row{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.book .row .img img{
+    width: 100%;
+    height:500px;
+}
+
+.book .row form{
+    flex: 1 1 40rem;
+    padding:2rem;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.book .row form .inputBox{
+    padding:.5rem 0;
+
+}
+
+.book .row form .inputBox input{
+    width: 25%;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    font-size:1rem;
+    color:#333;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+
+}
+ 
+.footer{
+    background:#333;
+  }
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span{
+    color:var(--orange);
+  }
